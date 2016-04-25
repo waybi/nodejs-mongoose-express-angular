@@ -1,0 +1,28 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" type="text/css" href="/css/cart_styles.css"/>
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+<div ng-controller="shoppingController">
+    <div id="banner">
+        <div id="title">我的购物车</div>
+        <div id="bar">
+            <span class="orders" ng-click="setContent('orders.html')">我的订单</span>
+            <span id="cartLink" ng-click="setContent('cart.html')">
+                {{customer.cart.length}} 购物车
+                <img src="/images/cart.png"/>
+            </span>
+        </div>
+    </div>
+    <div id="main">
+        <!-- 引入某个模版模块 -->
+        <div ng-include="content" style="margin: 0 15px"></div>
+    </div>
+</div>
+<script src="/libs/angular/angular.min.js"></script>
+<script src="/js/cart_app.js"></script>
+</body>
+</html>

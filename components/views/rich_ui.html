@@ -1,0 +1,22 @@
+<!doctype html>
+<html ng-app="richApp">
+<head>
+    <title>Rich UI</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/default.css"/>
+</head>
+<body>
+<rich_tabs>
+    <rich_pane title="天气">
+        <div ng-include="'/weather.html'"></div>
+    </rich_pane>
+    <rich_pane title="拖动组件">
+        <div ng-include="'/draggable.html'"></div>
+    </rich_pane>
+    <rich_pane title="表格">
+        <div ng-include="'/tables.html'"></div>
+    </rich_pane>
+</rich_tabs>
+<script src="libs/angular/angular.min.js"></script>
+<script src="/js/rich_ui_app.js"></script>
+</body>
+</html>

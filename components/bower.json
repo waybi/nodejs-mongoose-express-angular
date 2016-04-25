@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-mongodb-angularjs-web_components",
+  "version": "0.0.0",
+  "authors": [
+    "waybi <82529205@qq.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "static/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.5.5",
+    "bootstrap": "~3.3.6"
+  }
+}

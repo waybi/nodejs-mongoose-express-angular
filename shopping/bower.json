@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-mongodb-angularjs-web_shopping",
+  "main": "index.js",
+  "version": "0.0.0",
+  "authors": [
+    "waybi <82529205@qq.com>"
+  ],
+  "keywords": [
+    "angular",
+    "node",
+    "mongoose"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "static/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.5.4",
+    "bootstrap": "~3.3.6"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-mongodb-angularjs-web_components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "angular"
+  ],
+  "author": "waybi",
+  "license": "bowerISC",
+  "devDependencies": {
+    "body-parser": "^1.15.0",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "grunt-concurrent": "^2.3.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-nodemon": "^0.4.2",
+    "mongodb": "^2.1.16",
+    "mongoose": "^4.4.12",
+    "path": "^0.12.7"
+  }
+}
