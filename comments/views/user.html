@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>用户详情</title>
+    <link rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/libs/angular/angular.min.js"></script>
+    <script src="/js/my-app.js"></script>
+</head>
+<body>
+    <div class="container" ng-controller="myController">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <form action="/user/update" method="POST">
+                    <div class="modal-body">
+                        <h4>完善资料,准备相亲</h4>
+                        <br>
+                        <div class="form-group">
+                            <label for="signinName">用户名</label>
+                            <input type="text" id="signinName" class="form-control" name="username"
+                                   ng-model="user.username">
+                        </div>
+                        <div class="form-group">
+                            <label >增加邮箱</label>
+                            <input type="email" class="form-control" name="email" ng-model="user.email">
+                        </div>
+                        <div class="form-group">
+                            <label >兴趣</label>
+                            <input type="text" class="form-control" name="favorite" ng-model="user.favorite">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success" type="submit">保存</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <form action="/user/delete" method="POST">
+                <input type="submit" value="删除用户">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

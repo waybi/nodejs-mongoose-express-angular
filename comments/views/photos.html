@@ -1,0 +1,36 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+    <title>评论</title>
+    <link rel="stylesheet" type="text/css" href="/css/comment_styles.css"/>
+    <link rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+<div ng-controller="photoController" class="container" style="border: 1px solid #337ab7;
+padding-bottom: 15px;margin-top: 15px; border-radius: 4px">
+    <h3>nodejs+Angularjs实现评论功能</h3>
+    <div class="row">
+        <div class="col-md-2" ng-repeat="photo in photos">
+            <a href="#" class="thumbnail">
+                <img class="listPhoto" ng-click="setPhoto(photo._id)" src="/images/{{photo.filename}}" alt="">
+            </a>
+        </div>
+    </div>
+    <div class=" row">
+        <div class="col-md-6">
+            <img class="mainPhoto" src="images/{{photo.filename}}" alt="">
+        </div>
+        <div  class="col-md-6" ng-init="addComment=false;replySubject='';replyBody=''">
+            <div style="height: 400px; overflow: auto;" class="comment" ng-include="'comment_thread.html'"></div>
+        </div>
+    </div>
+</div>
+<!--<div ng-controller="pageController">-->
+    <!--<div id="pageComments" ng-init="addComment=false;replySubject='';replyBody=''">-->
+        <!--<div class="comment" ng-include="'comment_thread.html'"></div>-->
+    <!--</div>-->
+<!--</div>-->
+<script src="/libs/angular/angular.min.js"></script>
+<script src="/js/comment_app.js"></script>
+</body>
+</html>

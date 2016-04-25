@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-mongodb-angularjs-web",
+  "version": "0.0.0",
+  "description": "nodejs+mongodb+angular",
+  "keywords": [
+    "learn"
+  ],
+  "authors": [
+    "waybi"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "angular": "~1.5.3"
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>增加图片</title>
+    <link rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <form action="/photos/save" method="POST">
+                    <div class="modal-body">
+                        <h2 class="text-center">新增图片</h2>
+                        <br>
+                        <div class="form-group">
+                            <label for="title">title</label>
+                            <input type="text" id="title" class="form-control" name="title">
+                        </div>
+                        <div class="form-group">
+                            <label for="filename">filename</label>
+                            <input type="text" id="filename" class="form-control" name="filename">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success" type="submit">提交</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/libs/angular/angular.min.js"></script>
+    <script src="/js/my-app.js"></script>
+</head>
+<body>
+    <div class="container" ng-controller="myController">
+        <h2>欢迎<%= username %>这位帅哥乱点进来此网站</h2>
+        <a href="/logout">登出</a>
+        <a href="/user">用户详情</a>
+        <p>麻雀虽小,五藏俱全<p>
+        <hr><%= msg %>
+    </div>
+</body>
+</html>
